@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-section">
+            <!-- Homepage -->
+            <div id="homepage">
+                <h1>Knowledge Quest</h1>
+                <p class="welcome-text">Test your knowledge with our interactive quiz! Answer 8 multiple-choice questions and see how well you score.</p>
+                <button id="start-btn" class="btn">Start Quiz</button>
+            </div>
+            
+            <!-- Quiz Section -->
+            <div id="quiz">
+                <div class="question-count">
+                    <span class="current-question">Question 1 of 8</span>
+                    <span class="timer">Time: <span id="time">05:00</span></span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <h2 class="question-text" id="question-text">Question text goes here</h2>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                <div class="quiz-controls">
+                    <button id="next-btn" class="btn">Next Question</button>
+                    <button id="submit-btn" class="btn btn-secondary">Submit Quiz</button>
+                </div>
+            </div>
+            
+            <!-- Results Section -->
+            <div id="results">
+                <h1>Quiz Results</h1>
+                <div class="score-container">
+                    <p>Your Score</p>
+                    <div class="score" id="final-score">0/8</div>
+                    <p class="message" id="result-message">Good job!</p>
+                </div>
+                <div class="correct-answers" id="correct-answers">
+                    <!-- Correct answers will be populated by JavaScript -->
+                </div>
+                <button id="restart-btn" class="btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
